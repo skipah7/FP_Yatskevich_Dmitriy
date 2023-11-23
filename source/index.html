@@ -3,10 +3,57 @@
   <head>
     <meta charset="utf-8" />
     <title>Housen</title>
-    <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
+    <main id="main">
+      <form id="calculator">
+        <header>
+          <input type="text" disabled id="output" value="0" />
+        </header>
+        <footer>
+          <div class="row">
+            <button data-type="clear" type="reset" value="clear" class="grey">
+              AC
+            </button>
+            <button data-type="operator" value="invert" class="grey">
+              +/-
+            </button>
+            <button data-type="operator" value="%" class="grey">%</button>
+            <button data-type="operator" value="/" class="orange">÷</button>
+          </div>
+          <div class="row">
+            <button data-type="operand" value="7" class="dark-grey" id="7">
+              7
+            </button>
+            <button data-type="operand" value="8" class="dark-grey">8</button>
+            <button data-type="operand" value="9" class="dark-grey">9</button>
+            <button data-type="operator" value="*" class="orange">x</button>
+          </div>
+          <div class="row">
+            <button data-type="operand" value="4" class="dark-grey">4</button>
+            <button data-type="operand" value="5" class="dark-grey">5</button>
+            <button data-type="operand" value="6" class="dark-grey">6</button>
+            <button data-type="operator" value="-" class="orange">-</button>
+          </div>
+          <div class="row">
+            <button data-type="operand" value="1" class="dark-grey">1</button>
+            <button data-type="operand" value="2" class="dark-grey">2</button>
+            <button data-type="operand" value="3" class="dark-grey">3</button>
+            <button data-type="operator" value="+" class="orange">+</button>
+          </div>
+          <div class="row">
+            <button data-type="operand" value="0" class="grow dark-grey">
+              0
+            </button>
+            <button data-type="operand" value="." class="dark-grey">.</button>
+            <button value="=" data-type="operator" class="orange">=</button>
+          </div>
+        </footer>
+      </form>
+    </main>
     <noscript
       >Please enable JavaScript to continue using this application.</noscript
     >

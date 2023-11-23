@@ -1,0 +1,111 @@
+html {
+  --white: #ffffff;
+  --black: #000000;
+  --light-grey: #ededed;
+  --orange: #f69906;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: inherit;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+body,
+html {
+  height: 100svh;
+  font-family: sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: 0px;
+}
+
+input {
+  background-color: transparent;
+  text-align: end;
+  width: 100%;
+  color: #d2d2d2;
+  border: 0px;
+  font-size: 4rem;
+}
+
+#main {
+  border: 2px solid var(--light-grey);
+  border-radius: 50px;
+  width: 100%;
+  max-width: 280px;
+  background-color: var(--black);
+  padding: 2rem 1rem;
+}
+header {
+  margin-top: 90px;
+  padding: 12px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer > *:last-child {
+  gap: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  color: var(--white);
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+button.grow {
+  flex-grow: 1;
+  border-radius: 40px;
+}
+
+button.active {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+button.grey {
+  background-color: #9f9f9f;
+  color: var(--black);
+}
+button.grey:hover {
+  background-color: var(--light-grey);
+}
+
+button.dark-grey {
+  background-color: #313131;
+}
+button.dark-grey:hover {
+  background-color: #999999;
+}
+
+button.orange {
+  background-color: var(--orange);
+}
+button.orange:hover {
+  background-color: orange;
+}
