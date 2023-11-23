@@ -3,10 +3,80 @@
   <head>
     <meta charset="utf-8" />
     <title>Housen</title>
-    <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <main>
+      <header>
+        <img src="assets/logo.svg" alt="logo" />
+        <nav>
+          <a href="#">Buy a house</a><a href="#">Rent a house</a
+          ><a href="#">Mortgage</a>
+        </nav>
+        <button class="secondary">Sign Up</button>
+      </header>
+      <div class="content">
+        <h1>Find your ideal home</h1>
+        <p>
+          Search from more than 19 million of inspected appartments, houses,
+          cottages, villas, manors and mansions
+        </p>
+
+        <div class="search-bar">
+          <div class="search-input">
+            <img src="assets/search.svg" /><span>Search for address</span>
+          </div>
+          <button class="primary">Search</button>
+        </div>
+
+        <div class="results">
+          <div class="search-result">
+            <div class="title">Calabasas, CA</div>
+            <div class="info">
+              <img src="assets/filter.svg" /><span
+                >$1.5k+ / 2 Beds / Appt. ... 3 more</span
+              ><img src="assets/right.svg" />
+            </div>
+          </div>
+
+          <div class="search-result">
+            <div class="title">Long Beach, CA</div>
+            <div class="info">
+              <img src="assets/filter.svg" /><span
+                >$2.0k+ / 1 Bed / Appt.  ... 3 more</span
+              ><img src="assets/right.svg" />
+            </div>
+          </div>
+
+          <div class="search-result">
+            <div class="title">Fullerton, CA</div>
+            <div class="info">
+              <img src="assets/filter.svg" /><span
+                >$2.5k+ / 2 Beds / Appt.  ... 3 more</span
+              ><img src="assets/right.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <span>Housen © 2020</span>
+        <nav>
+          <a href="#">About</a><a href="#">FAQ</a
+          ><a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a>
+        </nav>
+      </footer>
+    </main>
     <noscript
       >Please enable JavaScript to continue using this application.</noscript
     >

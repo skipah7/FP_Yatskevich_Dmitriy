@@ -1,0 +1,27 @@
+button {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+
+  padding: 8px 48px;
+  border-radius: 2px;
+
+  cursor: pointer;
+  transition: filter ease-in-out 200ms;
+}
+button:hover {
+  filter: brightness(80%);
+}
+
+button.primary {
+  background-color: var(--purple);
+  color: var(--white);
+  border: none;
+}
+
+button.secondary {
+  color: var(--purple);
+  background-color: var(--white);
+  border: 2px solid var(--purple);
+}
