@@ -1,0 +1,23 @@
+<main [formGroup]="form">
+  <header>
+    <input type="text" formControlName="search" placeholder="City" /><button
+      (click)="refresh()"
+    >
+      Refresh
+    </button>
+  </header>
+  @if (error$ | async) {
+    <p class="error">City not found</p>
+  } @else {
+    @if (forecast$ | async; as forecast) {
+      <h1>Forecast:</h1>
+      <p>Temperature: {{ forecast.main.temp }}</p>
+      <p>Feels Like: {{ forecast.main.feels_like }}</p>
+      <p>Humidity: {{ forecast.main.humidity }}</p>
+      <p>Wind Speed: {{ forecast.wind.speed }}</p>
+    }
+    @if (image$ | async; as image) {
+      <img [src]="image" />
+    }
+  }
+</main>
