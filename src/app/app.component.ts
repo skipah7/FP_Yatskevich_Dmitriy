@@ -12,7 +12,9 @@ import {
   switchMap,
 } from 'rxjs';
 
+import { TestDI } from '@core/decorators/test-injectable';
 import { ApiService } from '@core/services/api.service';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -28,6 +30,7 @@ export class AppComponent {
   form = this.#fb.group({ search: this.#fb.control('') });
 
   #refresh = new Subject<void>();
+  test = new TestDI();
 
   coordinates$ = merge(this.form.valueChanges, this.#refresh).pipe(
     map(() => this.form.controls.search.value),
