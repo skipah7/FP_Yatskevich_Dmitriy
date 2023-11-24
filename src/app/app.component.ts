@@ -1,8 +1,7 @@
 import { AsyncPipe } from '@angular/common';
-import { ChangeDetectionStrategy, signal } from '@angular/core';
+import { ChangeDetectionStrategy } from '@angular/core';
 import { Component, inject } from '@angular/core';
 import { NonNullableFormBuilder, ReactiveFormsModule } from '@angular/forms';
-import { ApiService } from '@core/services/api.service';
 import {
   Subject,
   debounceTime,
@@ -12,6 +11,8 @@ import {
   shareReplay,
   switchMap,
 } from 'rxjs';
+
+import { ApiService } from '@core/services/api.service';
 @Component({
   selector: 'app-root',
   standalone: true,

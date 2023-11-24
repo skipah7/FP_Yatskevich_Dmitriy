@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
+
 import { Coord, WeatherForecast } from '@core/models';
 import { ImageResult } from '@core/models/image';
 
